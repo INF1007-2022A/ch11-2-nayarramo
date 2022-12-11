@@ -4,10 +4,8 @@ Chapitre 11
 Classes pour représenter un personnage.
 """
 
-
 import random
-
-import utils
+from utils import clamp
 
 
 class Weapon:
@@ -77,7 +75,7 @@ class Character:
 
 	@hp.setter
 	def hp(self, val):
-		self.__hp = utils.clamp(val, 0, self.max_hp)
+		self.__hp = clamp(val, 0, self.max_hp)
 
 	def compute_damage(self, other):
 		return Character.compute_damage_output(

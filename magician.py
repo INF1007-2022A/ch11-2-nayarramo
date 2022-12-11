@@ -4,10 +4,8 @@ Chapitre 11.3
 Classes pour représenter un magicien et ses pouvoirs magiques.
 """
 
-
 import random
-
-import utils
+from utils import clamp
 from character import *
 
 

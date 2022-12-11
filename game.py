@@ -4,10 +4,8 @@ Chapitre 11.3
 Fonctions pour simuler un combat.
 """
 
-
 import random
-
-import utils
+from utils import clamp
 from character import *
 from magician import *
 
